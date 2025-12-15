@@ -25,12 +25,15 @@ The script accepts the following arguments:
         4: LLM Cleaning
     --folder_name : string, optional The name of the folder (or table reference) containing the output file from the previous step. Required if starting from step > 0.
 
-Examples
-1. Running the full pipeline
+### Examples
+1.     Running the full pipeline
 To run the entire process starting from the video download:
-Bash
+```Bash 
 python run_pipeline.py --url "INSERT_VIDEO_URL_HERE" --step 0
-2. Running from an intermediate step
+```
+
+2.    Running from an intermediate step
 To execute the pipeline starting from a specific intermediate stage (e.g., starting at the Chunking and Regex Cleaning phase), you must provide the starting step and the location of the data produced by the previous step:
-Bash
+```Bash
 python run_pipeline.py --folder_name "INSERT_FOLDER_NAME_HERE" --step 3
+```
