@@ -26,7 +26,7 @@ The script accepts the following arguments:
     --folder_name : string, optional The name of the folder (or table reference) containing the output file from the previous step. Required if starting from step > 0.
 
 ### Examples
-1.     Running the full pipeline
+1.    Running the full pipeline
 To run the entire process starting from the video download:
 ```Bash 
 python run_pipeline.py --url "INSERT_VIDEO_URL_HERE" --step 0
