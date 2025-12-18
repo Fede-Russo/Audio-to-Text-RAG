@@ -16,14 +16,14 @@ The pipeline can be executed via the command line using run_pipeline.py. It supp
 CLI Parameters
 
 The script accepts the following arguments:
-    --url : string, optional The URL of the video lecture to download. Required if starting from step 0.
-    --step : int The step from which to start the pipeline.
-        0: Download Video (Start from beginning)
-        1: Extract Audio
-        2: Generate Transcription
-        3: Chunking and Regex Cleaning
-        4: LLM Cleaning
-    --folder_name : string, optional The name of the folder (or table reference) containing the output file from the previous step. Required if starting from step > 0.
+-     --url : string, optional The URL of the video lecture to download. Required if starting from step 0.
+-     --step : int The step from which to start the pipeline.
+      -     0: Download Video (Start from beginning)
+      -     1: Extract Audio
+      -     2: Generate Transcription
+      -     3: Chunking and Regex Cleaning
+      -     4: LLM Cleaning
+-     --folder_name : string, optional The name of the folder (or table reference) containing the output file from the previous step. Required if starting from step > 0.
 
 ### Examples
 1.    Running the full pipeline
